@@ -1,0 +1,7 @@
+best_model:
+  model_path: D:\Insurance_ml_Project\Insurance_Premium_Predection\insurance\artifact\model_trainer\2022-08-04-18-17-39\trained_model\model.pkl
+history:
+  2022-08-04-12-20-53:
+    model_path: D:\Insurance_ml_Project\Insurance_Premium_Predection\insurance\artifact\model_trainer\2022-08-04-12-19-33\trained_model\model.pkl
+  2022-08-04-18-17-39:
+    model_path: D:\Insurance_ml_Project\Insurance_Premium_Predection\insurance\artifact\model_trainer\2022-08-04-12-20-53\trained_model\model.pkl
