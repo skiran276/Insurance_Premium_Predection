@@ -11,7 +11,7 @@ from insurance.pipeline.pipeline import Pipeline
 from insurance.entity.premium_predictor import PremiumPredictor, PremiumData
 from insurance.logger import get_log_dataframe
 from flask import send_file, abort, render_template
-
+import pip
 
 ROOT_DIR = os.getcwd()
 LOG_FOLDER_NAME = "logs"
@@ -29,7 +29,7 @@ EXPENSES = "expenses"
 app = Flask(__name__)
 
 
-@app.route('/artifact', defaults={'req_path': 'insurance'})
+@app.route('/artifact', defaults={'req_path':'insurance'})
 @app.route('/artifact/<path:req_path>')
 def render_artifact_dir(req_path):
     os.makedirs("insurance", exist_ok=True)
