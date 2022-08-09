@@ -105,11 +105,11 @@ def predict():
 
     if request.method == 'POST':
         age = float(request.form['age'])
-        sex = request.form['sex']
+        sex = str(request.form['sex'])
         bmi = float(request.form['bmi'])
         children = float(request.form['children'])
-        smoker = request.form['smoker']
-        region = request.form['region']
+        smoker = str(request.form['smoker'])
+        region = str(request.form['region'])
         
         premium_data = PremiumData(age=age,
                                    sex=sex,
